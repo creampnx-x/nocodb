@@ -41,7 +41,7 @@ export function useGlobalState(storageKey = 'nocodb-gui-v2'): State {
     if (availableLocale) locale = availableLocale as keyof typeof Language
 
     return locale
-  }, 'en' /** fallback locale */)
+  }, 'zh-Hans' /** fallback locale */)
 
   /** State */
   const initialState: StoredState = {

@@ -59,7 +59,7 @@ onUnmounted(() => {
     <div v-if="!isSharedBase" class="nc-sidebar-bottom-section">
       <GeneralGift v-if="!isEeUI" />
       <DashboardSidebarBeforeUserInfo />
-      <DashboardSidebarFeed v-if="appInfo.feedEnabled" />
+      <!-- <DashboardSidebarFeed v-if="appInfo.feedEnabled" /> -->
       <DashboardSidebarUserInfo />
     </div>
   </div>

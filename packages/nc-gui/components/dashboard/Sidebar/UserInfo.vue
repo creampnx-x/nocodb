@@ -97,8 +97,8 @@ const accountUrl = computed(() => {
                 <span class="menu-btn"> {{ $t('general.logout') }}</span>
               </div>
             </NcMenuItem>
-            <NcDivider />
-            <a
+            <!-- <NcDivider /> -->
+            <!-- <a
               v-e="['c:nocodb:discord']"
               href="https://discord.gg/5RgZmkW"
               target="_blank"
@@ -109,8 +109,8 @@ const accountUrl = computed(() => {
                 <GeneralIcon class="social-icon" icon="ncDiscord" />
                 <span class="menu-btn"> {{ $t('labels.community.joinDiscord') }} </span>
               </NcMenuItem>
-            </a>
-            <a
+            </a> -->
+            <!-- <a
               v-e="['c:nocodb:reddit']"
               href="https://www.reddit.com/r/NocoDB"
               target="_blank"
@@ -121,8 +121,8 @@ const accountUrl = computed(() => {
                 <GeneralIcon class="social-icon" icon="ncReddit" />
                 <span class="menu-btn"> {{ $t('labels.community.joinReddit') }} </span>
               </NcMenuItem>
-            </a>
-            <a
+            </a> -->
+            <!-- <a
               v-e="['c:nocodb:twitter']"
               href="https://twitter.com/nocodb"
               target="_blank"
@@ -133,7 +133,7 @@ const accountUrl = computed(() => {
                 <GeneralIcon class="social-icon text-gray-500 group-hover:text-gray-800" icon="ncTwitter" />
                 <span class="menu-btn"> {{ $t('labels.twitter') }} </span>
               </NcMenuItem>
-            </a>
+            </a> -->
             <template v-if="!appInfo.ee || isFeatureEnabled(FEATURE_FLAG.LANGUAGE) || appInfo.isOnPrem">
               <NcDivider />
               <a-popover
@@ -166,7 +166,7 @@ const accountUrl = computed(() => {
             <template v-if="!isMobileMode">
               <NcDivider />
 
-              <a
+              <!-- <a
                 v-e="['c:nocodb:forum-open']"
                 href="https://community.nocodb.com"
                 target="_blank"
@@ -177,11 +177,11 @@ const accountUrl = computed(() => {
                   <GeneralIcon icon="ncHelp" class="menu-icon mt-0.5" />
                   <span class="menu-btn"> {{ $t('title.forum') }} </span>
                 </NcMenuItem>
-              </a>
+              </a> -->
 
               <a
                 v-e="['c:nocodb:docs-open']"
-                href="https://docs.nocodb.com"
+                href="https://code.nepdi.com.cn"
                 target="_blank"
                 class="!underline-transparent"
                 rel="noopener"
@@ -211,8 +211,8 @@ const accountUrl = computed(() => {
     </div>
 
     <template v-if="isMobileMode || appInfo.ee"></template>
-    <div v-else class="flex flex-row w-full justify-between pt-0.5 truncate">
-      <GeneralJoinCloud />
+    <div v-else class="flex flex-row w-full justify-between pt-1 truncate">
+      <!-- <GeneralJoinCloud /> -->
     </div>
   </div>
 </template>
