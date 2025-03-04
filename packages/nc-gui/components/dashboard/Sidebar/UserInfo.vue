@@ -181,7 +181,7 @@ const accountUrl = computed(() => {
 
               <a
                 v-e="['c:nocodb:docs-open']"
-                href="https://code.nepdi.com.cn"
+                href="https://code.nepdi.com.cn/mapinxue/docs"
                 target="_blank"
                 class="!underline-transparent"
                 rel="noopener"

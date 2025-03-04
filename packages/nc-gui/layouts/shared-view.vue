@@ -68,7 +68,7 @@ export default {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img width="96" alt="NocoDB" src="~/assets/img/brand/nocodb.png" class="flex-none min-w-[96px]" />
+              <img width="96" alt="NocoDB" src="~/assets/img/brand/logo-clear.png" class="flex-none min-w-[96px]" />
             </a>
 
             <div class="flex items-center gap-2 text-gray-900 text-sm truncate">

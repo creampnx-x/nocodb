@@ -10,14 +10,14 @@ const { appInfo } = useGlobal()
         class="flex items-center nc-workspace-menu overflow-hidden py-1.25 pr-0.25 justify-center w-full ml-2"
       >
         <a
-          class="transition-all duration-200 transform w-24 min-w-10"
-          href="https://github.com/nocodb/nocodb"
+          class="transition-all duration-200 transform w-60 min-w-10"
+          href="http://nepdi.powerchina.cn"
           target="_blank"
           rel="noopener noreferrer"
         >
           <NcTooltip :disabled="!appInfo?.version || isEeUI">
             <template #title>{{ appInfo?.version }}</template>
-            <img alt="NocoDB" src="~/assets/img/brand/nocodb.png" />
+            <img alt="NocoDB" src="~/assets/img/brand/logo-clear.png" />
           </NcTooltip>
         </a>
         <div class="flex flex-grow"></div>
