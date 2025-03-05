@@ -1,0 +1,25 @@
+FROM hub.rat.dev/node:22-alpine
+WORKDIR /usr/src/app
+
+COPY --link ./package.json ./package.json
+COPY --link ./packages ./packages
+
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
+RUN apk update
+
+RUN apk add --no-cache python3 make g++ py3-setuptools
+
+RUN corepack enable && corepack prepare pnpm@9.15.4 --activate
+
+RUN pnpm config set registry https://registry.npmmirror.com
+RUN pnpm bootstrap
+
+ENV NC_DOCKER=0.6 \
+    NC_TOOL_DIR=/usr/app/data/ \
+    NODE_ENV=production \
+    PORT=8080
+
+EXPOSE 8080
+
+
+CMD ["node", "./packages/nocodb/docker/main.js"]

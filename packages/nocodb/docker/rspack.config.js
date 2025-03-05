@@ -2,7 +2,7 @@ const path = require('path');
 const { rspack } = require('@rspack/core');
 const nodeExternals = require('webpack-node-externals');
 module.exports = {
-    entry: './src/run/dockerEntry.ts',
+    entry: './src/run/local.ts',
     module: {
         rules: [
             {
